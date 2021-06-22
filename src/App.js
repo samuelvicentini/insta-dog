@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import { UserStorage } from './context/UserContext';
+
 import Home from './pages/Home';
 import Login from './components/Login';
 
@@ -11,12 +13,14 @@ import './App.css';
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='login/*' element={<Login />} />
-      </Routes>
-      <Footer />
+      <UserStorage>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='login/*' element={<Login />} />
+        </Routes>
+        <Footer />
+      </UserStorage>
     </BrowserRouter>
   );
 }
