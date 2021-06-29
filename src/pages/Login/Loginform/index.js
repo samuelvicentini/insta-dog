@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../../context/UserContext';
 
-import Input from '../../Form/Input';
-import Button from '../../Form/Button';
+import Input from '../../../components/Form/Input';
+import Button from '../../../components/Form/Button';
 import useForm from '../../../Hooks/useForm';
-import Error from '../../Helper/Error';
+import Error from '../../../components/Helper/Error';
 
 import style from './style.module.css';
-import styleButton from '../../Form/Button/style.module.css';
+import styleButton from '../../../components/Form/Button/style.module.css';
 
 const LoginForm = () => {
   const username = useForm();
