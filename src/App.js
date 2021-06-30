@@ -2,8 +2,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { UserStorage } from './context/UserContext';
 
+import ProtectedRouter from './components/Helper/ProtectedRouter';
+
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Conta from './pages/Conta';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -18,6 +21,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='login/*' element={<Login />} />
+          <ProtectedRouter path='conta/*' element={<Conta />} />
         </Routes>
         <Footer />
       </UserStorage>
