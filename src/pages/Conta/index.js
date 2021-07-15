@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import Feed from '../../components/Feed';
 import UserHeader from './UserHeader/UserHeader';
-import UserPhotoPost from './UserPhotoPost';
+import UserPhotoPost from './UserPhotoPost/UserPhotoPost';
 import UserStats from './UserStats';
 
 const Conta = () => {
