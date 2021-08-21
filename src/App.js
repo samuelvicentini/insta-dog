@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import Photo from './components/PhotoContent/Photo';
 
 import './App.css';
+import UserProfile from './pages/Conta/UserProfile';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='login/*' element={<Login />} />
           <Route path='foto/:id' element={<Photo />} />
+          <Route path='perfil/:user' element={<UserProfile />} />
           <ProtectedRouter path='conta/*' element={<Conta />} />
         </Routes>
         <Footer />
