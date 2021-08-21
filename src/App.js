@@ -10,6 +10,7 @@ import Conta from './pages/Conta';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Photo from './components/PhotoContent/Photo';
 
 import './App.css';
 
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='login/*' element={<Login />} />
+          <Route path='foto/:id' element={<Photo />} />
           <ProtectedRouter path='conta/*' element={<Conta />} />
         </Routes>
         <Footer />
