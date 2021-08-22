@@ -4,6 +4,7 @@ import { PASSWORD_RESET } from '../../../api';
 import Button from '../../../components/Form/Button';
 import Input from '../../../components/Form/Input';
 import Error from '../../../components/Helper/Error';
+import Head from '../../../components/Helper/Head';
 import useFetch from '../../../Hooks/useFetch';
 import useForm from '../../../Hooks/useForm';
 
@@ -38,6 +39,7 @@ const LoginPasswordReset = () => {
 
   return (
     <div>
+      <Head title='Resete a senha' />
       <h1 className='title'>Resete a Senha</h1>
       <form onSubmit={handleSubmit}>
         <Input
